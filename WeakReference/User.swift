@@ -7,3 +7,17 @@
 //
 
 import Foundation
+class User {
+    var name: String
+    weak var car: Car?
+    
+    init(name: String) {
+        self.name = name
+        print("User init")
+    }
+    
+    deinit {
+        print("User deinit")
+    }
+}
+
